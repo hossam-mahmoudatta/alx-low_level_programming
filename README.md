@@ -1,1 +1,2 @@
-# alx-low_level_programming
+#!/bin/bash
+This is the read me file for this project
