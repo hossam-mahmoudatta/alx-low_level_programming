@@ -1,7 +1,6 @@
 #include <stdio.h>
-
 /**
- * main function - application start
+ * main - application start
  *
  * Return: 0 (Successfully)
  */
