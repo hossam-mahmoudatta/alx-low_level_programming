@@ -10,7 +10,8 @@
  * description - prints random numbers
  *
  * return - 0 successfully
-/
+ *
+ */
 
 int main(void)
 {
