@@ -2,6 +2,8 @@
 /*
  * main function - application start
  *
+ * Description: Prints a line
+ *
  * Return: 0 (Successfully)
  */
 int main(void)
