@@ -13,7 +13,7 @@ int main(void)
 {
 	char letter = 'a';
 	int number = 0;
-	
+
 	while (number < 10)
 	{
 		putchar('0' + number);
