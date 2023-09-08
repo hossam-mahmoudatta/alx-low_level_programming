@@ -1,6 +1,6 @@
 #include <stdio.h>
-/*
- * main function - application start
+/**
+ * main - application start
  *
  * Description: Prints a line
  *
