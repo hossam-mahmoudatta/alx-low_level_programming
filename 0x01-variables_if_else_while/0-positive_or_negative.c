@@ -9,7 +9,7 @@
  *
  * description - prints random numbers
  *
- * return: 0 successfully
+ * Return: 0 (Success)
  */
 
 int main(void)
