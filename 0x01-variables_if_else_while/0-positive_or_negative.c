@@ -9,13 +9,13 @@
  *
  * description - prints random numbers
  *
- * return - 0 successfully
- *
+ * return: 0 successfully
  */
 
 int main(void)
 {
 	int n;
+
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	/* your code goes there */
