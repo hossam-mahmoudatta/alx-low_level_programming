@@ -12,16 +12,21 @@
 int main(void)
 {
 	int number = 0;
-
-	while (number < 10)
+	int prevDigit = -1;  // Initialize to an invalid value
+	
+	for (int i = 0; i <= 9; i++)
 	{
-		putchar('0' + number);
-		if (number < 9)
+		for (int j = i + 1; j <= 9; j++)
 		{
-			putchar(',');
-			putchar(' ');
+			if (!(prevDigit == i && j == 0))
+			{
+				putchar(i + '0');
+				putchar(',');
+				putchar(' ');
+				putchar(j + '0');
+				prevDigit = i;
+			}
 		}
-		number++;
 	}
 	putchar('\n');
 	return (0);
