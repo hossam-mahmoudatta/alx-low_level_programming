@@ -11,10 +11,10 @@
  */
 int main(void)
 {
-	int prevDigit = -1;  // Initialize to an invalid value
+	int prevDigit = -1;
 	int i = 0;
 	int j = 0;
-	
+
 	for (i = 0; i <= 9; i++)
 	{
 		for (j = i + 1; j <= 9; j++)
