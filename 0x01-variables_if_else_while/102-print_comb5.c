@@ -22,12 +22,12 @@ int main(void)
 	{
 		firstDigit1 = i / 10;
 		secondDigit1 = i % 10;
-		
+
 		for (j = i; j < 100; j++)
 		{
 			firstDigit2 = j / 10;
 			secondDigit2 = j % 10;
-			
+
 			if ((i != j) && (i <= j))
 			{
 
@@ -36,7 +36,7 @@ int main(void)
 				putchar(' ');
 				putchar(firstDigit2 + '0');
 				putchar(secondDigit2 + '0');
-				
+
 				if (i != 98 || j != 99)
 				{
 					putchar(',');
