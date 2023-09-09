@@ -11,17 +11,34 @@
  */
 int main(void)
 {
-	int number = 0;
+	int prevDigit = -1;
+	int i = 0;
+	int j = 0;
+	int k = 0;
 
-	while (number < 10)
+	for (i = 0; i <= 9; i++)
 	{
-		putchar('0' + number);
-		if (number < 9)
+		for (j = i + 1; j <= 9; j++)
 		{
-			putchar(',');
-			putchar(' ');
+			for (k = j + 1; k <= 9; k++)
+			{
+				if (!(prevDigit == i && j == 0 && k == 0))
+				{
+					putchar(i + '0');
+					putchar(j + '0');
+					putchar(k + '0');
+					if (i < 9)
+					{
+						if (!(i == 7 && j == 8 && k == 9))
+						{
+							putchar(',');
+							putchar(' ');
+						}
+						prevDigit = i;
+					}
+				}
+			}
 		}
-		number++;
 	}
 	putchar('\n');
 	return (0);
