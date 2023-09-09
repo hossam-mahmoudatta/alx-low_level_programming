@@ -22,10 +22,13 @@ int main(void)
 			if (!(prevDigit == i && j == 0))
 			{
 				putchar(i + '0');
-				putchar(',');
-				putchar(' ');
 				putchar(j + '0');
-				prevDigit = i;
+				if (i < 9)
+				{
+					putchar(',');
+					putchar(' ');
+					prevDigit = i;
+				}
 			}
 		}
 	}
