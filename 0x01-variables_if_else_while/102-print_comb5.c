@@ -15,32 +15,28 @@ int main(void)
 	int secondDigit1 = 0;
 	int firstDigit2 = 0;
 	int secondDigit2 = 0;
+	int i = 0;
+	int j = 0;
 
-	for (int i = 0; i < 100; i++)
+	for (i = 0; i < 100; i++)
 	{
-		firstDigit1 = i / 10;     // Extract the first digit of the first number
-		secondDigit1 = i % 10;    // Extract the second digit of the first number
+		firstDigit1 = i / 10;
+		secondDigit1 = i % 10;
 		
-		for (int j = i; j < 100; j++)
+		for (j = i; j < 100; j++)
 		{
-			firstDigit2 = j / 10; // Extract the first digit of the second number
-			secondDigit2 = j % 10; // Extract the second digit of the second number
+			firstDigit2 = j / 10;
+			secondDigit2 = j % 10;
 			
-			// Check if the combination should be printed (in ascending order)
 			if ((i != j) && (i <= j))
 			{
-				// Print the first two-digit number with leading zeros if needed
+
 				putchar(firstDigit1 + '0');
 				putchar(secondDigit1 + '0');
-				
-				// Print the separator
 				putchar(' ');
-				
-				// Print the second two-digit number with leading zeros if needed
 				putchar(firstDigit2 + '0');
 				putchar(secondDigit2 + '0');
 				
-				// Print the comma and space if it's not the last combination
 				if (i != 98 || j != 99)
 				{
 					putchar(',');
