@@ -11,37 +11,40 @@
  */
 int main(void)
 {
-	int prevDigit = -1;
-	int i = 0;
-	int j = 0;
-	int k = 0;
-	int l = 0;
+	int firstDigit1 = 0;
+	int secondDigit1 = 0;
+	int firstDigit2 = 0;
+	int secondDigit2 = 0;
 
-	for (i = 0; i <= 9; i++)
+	for (int i = 0; i < 100; i++)
 	{
-		for (j = i + 1; j <= 9; j++)
+		firstDigit1 = i / 10;     // Extract the first digit of the first number
+		secondDigit1 = i % 10;    // Extract the second digit of the first number
+		
+		for (int j = i; j < 100; j++)
 		{
-			for (k = j + 1; k <= 9; k++)
+			firstDigit2 = j / 10; // Extract the first digit of the second number
+			secondDigit2 = j % 10; // Extract the second digit of the second number
+			
+			// Check if the combination should be printed (in ascending order)
+			if ((i != j) && (i <= j))
 			{
-				for (l = k + 1; l <= 9; l++)
+				// Print the first two-digit number with leading zeros if needed
+				putchar(firstDigit1 + '0');
+				putchar(secondDigit1 + '0');
+				
+				// Print the separator
+				putchar(' ');
+				
+				// Print the second two-digit number with leading zeros if needed
+				putchar(firstDigit2 + '0');
+				putchar(secondDigit2 + '0');
+				
+				// Print the comma and space if it's not the last combination
+				if (i != 98 || j != 99)
 				{
-					if (!(prevDigit == i && j == 0 && k == 0 && l == 0))
-					{
-						putchar(i + '0');
-						putchar(j + '0');
-						putchar(' ');
-						putchar(k + '0');
-						putchar(l + '0');
-						if (i < 9)
-						{
-							if (!(i == 7 && j == 8 && k == 9))
-							{
-								putchar(',');
-								putchar(' ');
-							}
-							prevDigit = i;
-						}
-					}
+					putchar(',');
+					putchar(' ');
 				}
 			}
 		}
