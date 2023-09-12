@@ -14,10 +14,7 @@ int main(void)
 {
 	char letter[] = "_putchar";
 
-	while (letter < '\0')
-	{
-		putchar(letter);
-	}
+    putchar(letter);
 
 	putchar('\n');
 	return (0);
