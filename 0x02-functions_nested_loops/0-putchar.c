@@ -12,12 +12,11 @@
  */
 int main(void)
 {
-	char *letter = "_putchar";
+	char letter[] = "_putchar";
 
-	while (*letter < '\0')
+	while (letter < '\0')
 	{
-		putchar(*letter);
-		letter++;
+		putchar(letter);
 	}
 
 	putchar('\n');
