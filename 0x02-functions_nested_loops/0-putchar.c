@@ -13,8 +13,12 @@
 int main(void)
 {
 	char letter[] = "_putchar";
+    int i = 0;
 
-    putchar(letter);
+	while (letter [i] < '\0')
+	{
+		putchar(letter[i]);
+	}
 
 	putchar('\n');
 	return (0);
