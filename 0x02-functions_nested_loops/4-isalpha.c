@@ -3,7 +3,7 @@
 
 /* betty style doc for function main goes there */
 /**
- * _islower - checks a lowercase character
+ * _isalpha - checks a alphabet character
  *
  * @c: letter being tested
  *
@@ -16,10 +16,10 @@ int _isalpha(int c)
 	{
 		return (1);
 	}
-    else if ((c > 96) && (c < 123))
-    {
-        return (1);
-    }
+	else if ((c > 96) && (c < 123))
+	{
+		return (1);
+	}
 	else
 	{
 		return (0);
