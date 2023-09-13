@@ -20,7 +20,7 @@ int main(void)
 	{
 		printf("%lu", first);
 
-		if (i < input - 1)
+		if (i < input)
 		{
 			printf(", ");
 		}
