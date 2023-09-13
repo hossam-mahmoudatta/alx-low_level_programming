@@ -16,12 +16,19 @@ int main(void)
 	int i = 0;
 	int input = 50;
 
-	for (i = 1 ; i < input ; i++)
+	for (i = 1 ; i <= input ; i++)
 	{
-		next = first + second;
-		printf("%ld%s", next, (i < input) ? ", " : "");
-		first = second;
-		second = next;
+		if (i != input)
+		{
+			next = first + second;
+			printf("%ld, ", next);
+			first = second;
+			second = next;
+		}
+		else
+		{
+			printf("%ld", next);
+		}
 	}
 	return (0);
 }
