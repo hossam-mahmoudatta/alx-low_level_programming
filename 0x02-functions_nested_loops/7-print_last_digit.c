@@ -13,8 +13,8 @@
 int print_last_digit(int n)
 {
 	int digit;
-
-	if(n < 0)
+	
+	if (n < 0)
 	{
 		n = -n;
 	}
