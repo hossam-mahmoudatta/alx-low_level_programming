@@ -36,7 +36,7 @@ int main(void)
 		fibo2_half1 = fibo2_half1 + fibo1_half1;
 		fibo1_half1 = fibo2_half1 - fibo1_half1;
 		fibo2_half2 = fibo2_half2 + fibo1_half2;
-		fibo1_half2 = fibo2_half2 - fibo1_half2
+		fibo1_half2 = fibo2_half2 - fibo1_half2;
 	}
 	printf("\n");
 	return (0);
