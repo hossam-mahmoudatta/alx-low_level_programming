@@ -3,9 +3,12 @@
 
 /* betty style doc for function main goes there */
 /**
- * times_table - prints the 9 times table
+ * add - prints the 9 times table
  *
- * Return: 0 (otherwise)
+ * @m: 1st parameter
+ * @n: 2nd parameter
+ * 
+ * Return: result
  */
 
 int add(int m, int n)
