@@ -15,7 +15,7 @@ int main(void)
 	unsigned long fibo1_half1, fibo1_half2, fibo2_half1, fibo2_half2;
 	unsigned long next, next1, next2, i;
 
-	for (i = 0 ; i < 92 ; i++)
+	for (i = 1 ; i < 91 ; i++)
 	{
 		printf("%lu, ", first);
 		next = first + second;
@@ -28,7 +28,7 @@ int main(void)
 	fibo1_half2 = first % 1000000000;
 	fibo2_half2 = second % 1000000000;
 
-	for (i = 93 ; i < 99 ; i++)
+	for (i = 92 ; i < 99 ; i++)
 	{
 		next1 = fibo1_half1 + fibo2_half1;
 		next2 = fibo1_half2 + fibo2_half2;
