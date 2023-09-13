@@ -25,10 +25,6 @@ int main(void)
 			first = second;
 			second = next;
 		}
-		else
-		{
-			printf("%ld\n", next);
-		}
 	}
 	return (0);
 }
