@@ -3,7 +3,7 @@
 
 /* betty style doc for function main goes there */
 /**
- * main - app start
+ * print_alphabet - prints the alphabet from a to z
  *
  * Return: 0 (Successfully executed)
  */
