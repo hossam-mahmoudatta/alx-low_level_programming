@@ -17,7 +17,6 @@ int main(void)
 	unsigned long next1, next2;
 
 	int i = 0;
-	int input = 98;
 
 	for (i = 0 ; i < 92 ; i++)
 	{
