@@ -16,10 +16,14 @@ int main(void)
 	int i = 0;
 	int input = 50;
 
-	for (i = 0 ; i < input ; i++) {
+	for (i = 0 ; i < input ; i++)
+	{
 		if (i <= 1)
+		{
 			next = i;
-		else {
+		}
+		else
+		{
 			next = first + second;
 			first = second;
 			second = next;
