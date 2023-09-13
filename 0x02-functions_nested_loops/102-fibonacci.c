@@ -10,7 +10,7 @@
 
 int main(void)
 {
-    int first = 0;
+	long long first = 0;
 	int second = 1;
 	int next;
 	int i = 0;
