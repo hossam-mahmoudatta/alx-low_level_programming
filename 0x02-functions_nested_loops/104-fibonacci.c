@@ -30,8 +30,8 @@ int main(void)
 
 	for (i = 93 ; i < 99 ; i++)
 	{
-		printf(", %lu", fibo2_half1 + (fibo2_half2 / 1000000000));
-		printf("%lu", fibo2_half2 % 1000000000);
+		printf("%lu, ", fibo2_half1 + (fibo2_half2 / 1000000000));
+		printf("%lu, ", fibo2_half2 % 1000000000);
 
 		fibo2_half1 = fibo2_half1 + fibo1_half1;
 		fibo1_half1 = fibo2_half1 - fibo1_half1;
