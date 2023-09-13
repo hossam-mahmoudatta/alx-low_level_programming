@@ -15,18 +15,18 @@ int main(void)
 	long next;
 	int i = 0;
 	int input = 50;
-    long sum = 0;
+	long sum = 0;
 
 	for (i = 1 ; i <= input ; i++)
 	{
 		if ((first < 4000000) && ((first % 2) == 0))
 		{
-            sum = sum + first;
+			sum = sum + first;
 		}
 		next = first + second;
 		first = second;
 		second = next;
 	}
-    printf("%ld\n", sum);
+	printf("%ld\n", sum);
 	return (0);
 }
