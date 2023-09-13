@@ -18,17 +18,10 @@ int main(void)
 
 	for (i = 0 ; i < input ; i++)
 	{
-		if (i <= 1)
-		{
-			next = i;
-		}
-		else
-		{
-			next = first + second;
-			first = second;
-			second = next;
-		}
-		printf("%d ", next);
+		printf("%d ", second);
+		next = first + second;
+		first = second;
+		second = next;
 	}
 	return (0);
 }
