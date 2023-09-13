@@ -16,7 +16,7 @@ int main(void)
 	int i = 0;
 	int input = 98;
 
-	for (i = 0 ; i < input ; i++)
+	for (i = 1 ; i <= input ; i++)
 	{
 		printf("%lu", first);
 
