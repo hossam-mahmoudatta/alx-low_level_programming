@@ -13,24 +13,45 @@ int main(void)
 	unsigned long first = 1;
 	unsigned long second = 2;
 	unsigned long next;
+	unsigned long fibo1_half1, fibo1_half2, fibo2_half1, fibo2_half2;
+	unsigned long next1, next2;
+
 	int i = 0;
 	int input = 98;
 
-	for (i = 1 ; i <= input ; i++)
+	for (i = 0 ; i < 92 ; i++)
 	{
-		printf("%lu", first);
-
-		if (i < input)
-		{
-			printf(", ");
-		}
-		else
-		{
-			printf("\n");
-		}
+		printf("%lu, ", first);
 		next = first + second;
 		first = second;
 		second = next;
 	}
+
+	fibo1_half1 = first / 1000000000;
+	fibo2_half1 = second / 1000000000;
+	fibo1_half2 = first % 1000000000;
+	fibo2_half2 = second % 1000000000;
+
+	for (i = 93 ; i < 99 ; i++)
+	{
+		next1 = fibo1_half1 + fibo2_half1;
+		next2 = fibo1_half2 + fibo2_half2;
+
+		if (next2 > 9999999999)
+		{
+			next1 += 1;
+			next2 = 1000000000;
+		}
+		printf("%lu%lu", next1, next2);
+		if (i != 98)
+		{
+			printf(", ");
+		}
+		fibo1_half1 = fibo2_half1;
+		fibo1_half2 = fibo2_half2;
+		fibo2_half1 = next1;
+		fibo2_half2 = next2;
+	}
+	printf("\n");
 	return (0);
 }
