@@ -16,7 +16,7 @@ int main(void)
 	int i = 0;
 	int input = 50;
 
-	for (i = 3 ; i <= input ; i++)
+	for (i = 1 ; i <= input ; i++)
 	{
 		if (i != input)
 		{
@@ -27,7 +27,7 @@ int main(void)
 		}
 		else
 		{
-			printf("%ld", next);
+			printf("%ld\n", next);
 		}
 	}
 	return (0);
