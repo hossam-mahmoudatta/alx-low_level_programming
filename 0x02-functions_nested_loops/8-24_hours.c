@@ -8,18 +8,18 @@
  * Return: 0 (otherwise)
  */
 
- void jack_bauer(void)
+void jack_bauer(void)
 {
 	int i, j;
 
-	for(i = 0 ; i < 24 ; i++)
+	for (i = 0 ; i < 24 ; i++)
 	{
-		_putchar(i + '0');
-		_putchar(':');
-		for(j = 0 ; j < 60 ; j++)
+		for (j = 0 ; j < 60 ; j++)
 		{
-			_putchar(j + '0');
+			_putchar('0' + i);
+			_putchar(':');
+			_putchar('0' + j);
+			_putchar('\n');
 		}
-		_putchar('\n');
 	}
 }
