@@ -15,7 +15,7 @@ int main(void)
 	long next;
 	int i = 0;
 	int input = 50;
-    int sum = 0;
+    long sum = 0;
 
 	for (i = 1 ; i <= input ; i++)
 	{
