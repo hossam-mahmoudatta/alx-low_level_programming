@@ -16,7 +16,7 @@ int main(void)
 	int i = 0;
 	int input = 50;
 
-	for (i = 1 ; i < input ; i++)
+	for (i = 2 ; i < input ; i++)
 	{
 		next = first + second;
 		printf("%d%s", next, (i < input) ? ", " : "");
