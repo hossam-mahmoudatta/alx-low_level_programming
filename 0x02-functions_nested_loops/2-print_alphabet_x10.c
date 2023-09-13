@@ -3,7 +3,7 @@
 
 /* betty style doc for function main goes there */
 /**
- * print_alphabet - prints the alphabet from a to z
+ * print_alphabet_x10 - prints the alphabet from a to z 10 times
  *
  * Return: 0 (Successfully executed)
  */
