@@ -10,16 +10,20 @@
 
 int main(void)
 {
-	int i;
-	int sum = 0;
+    int first = 0;
+	int second = 1;
+	int next;
+	int i = 0;
+	int input = 50;
 
-	for (i = 0; i < 1024; i++)
-	{
-		if (i % 3 == 0 || i % 5 == 0)
-		{
-			sum += i;
+	for (i = 0 ; i < input ; i++) {
+		if (i <= 1)
+			next = i;
+		else {
+			next = first + second;
+			first = second;
+			second = next;
 		}
+		printf("%d ", next);
 	}
-	printf("%d\n", sum);
-	return (0);
 }
