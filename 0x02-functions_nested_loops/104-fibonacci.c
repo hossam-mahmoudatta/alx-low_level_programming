@@ -10,9 +10,9 @@
 
 int main(void)
 {
-	long first = 1;
-	long second = 2;
-	long next;
+	unsigned long first = 1;
+	unsigned long second = 2;
+	unsigned long next;
 	int i = 0;
 	int input = 98;
 
@@ -20,11 +20,11 @@ int main(void)
 	{
 		if (first != 218922995834555169026)
 		{
-			printf("%ld, ", first);
+			printf("%lu, ", first);
 		}
 		else
 		{
-			printf("%ld\n", first);
+			printf("%lu\n", first);
 		}
 		next = first + second;
 		first = second;
