@@ -18,7 +18,7 @@ int main(void)
 
 	for (i = 1 ; i <= input ; i++)
 	{
-		if (i != input)
+		if (next != 20365011074)
 		{
 			next = first + second;
 			printf("%ld, ", next);
