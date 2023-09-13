@@ -16,10 +16,10 @@ int main(void)
 	int i = 0;
 	int input = 50;
 
-	for (i = 0 ; i < input ; i++)
+	for (i = 1 ; i < input ; i++)
 	{
-		printf("%d ", second);
 		next = first + second;
+		printf("%d%s", next, (i < input) ? ", " : "");
 		first = second;
 		second = next;
 	}
