@@ -18,8 +18,7 @@ int main(void)
 
 	for (i = 1 ; i <= input ; i++)
 	{
-		next = first + second;
-        printf("%lu", next);
+		printf("%lu", first);
 
 		if (i < input - 1)
 		{
@@ -29,6 +28,7 @@ int main(void)
 		{
 			printf("\n");
 		}
+		next = first + second;
 		first = second;
 		second = next;
 	}
