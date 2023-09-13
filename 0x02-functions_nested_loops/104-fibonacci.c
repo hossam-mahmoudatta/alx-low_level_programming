@@ -18,15 +18,17 @@ int main(void)
 
 	for (i = 1 ; i <= input ; i++)
 	{
-		if (first != 218922995834555169026)
+		next = first + second;
+        printf("%lu", next);
+
+		if (i < input - 1)
 		{
-			printf("%lu, ", first);
+			printf(", ");
 		}
 		else
 		{
-			printf("%lu\n", first);
+			printf("\n");
 		}
-		next = first + second;
 		first = second;
 		second = next;
 	}
