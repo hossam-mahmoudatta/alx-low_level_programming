@@ -10,8 +10,8 @@
 
 int main(void)
 {
-	long first = 0;
-	long second = 1;
+	long first = 1;
+	long second = 2;
 	long next;
 	int i = 0;
 	int input = 50;
