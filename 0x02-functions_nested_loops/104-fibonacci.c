@@ -12,7 +12,8 @@ int main(void)
 {
 	unsigned long first = 1;
 	unsigned long second = 2;
-	unsigned long next, next1, next2, fibo1_half1, fibo1_half2, fibo2_half1, fibo2_half2;
+	unsigned long fibo1_half1, fibo1_half2, fibo2_half1, fibo2_half2;
+	unsigned long next, next1, next2;
 	int i = 0;
 
 	for (i = 0 ; i < 92 ; i++)
