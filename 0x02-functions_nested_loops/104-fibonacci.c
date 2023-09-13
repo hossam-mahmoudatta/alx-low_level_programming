@@ -18,7 +18,7 @@ int main(void)
 
 	for (i = 1 ; i <= input ; i++)
 	{
-		if (first != 20365011074)
+		if (first != 218922995834555169026)
 		{
 			printf("%ld, ", first);
 		}
