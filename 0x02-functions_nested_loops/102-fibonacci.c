@@ -18,13 +18,17 @@ int main(void)
 
 	for (i = 1 ; i <= input ; i++)
 	{
-		if (second != 20365011074)
+		if (first != 20365011074)
 		{
-			next = first + second;
-			printf("%ld, ", next);
-			first = second;
-			second = next;
+			printf("%ld, ", first);
 		}
+		else
+		{
+			printf("%ld, ", first);
+		}
+		next = first + second;
+		first = second;
+		second = next;
 	}
 	return (0);
 }
