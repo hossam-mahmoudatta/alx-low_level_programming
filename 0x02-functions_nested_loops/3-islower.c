@@ -6,7 +6,7 @@
  * _islower - checks a lowercase character
  *
  * @c: letter being tested
- * 
+ *
  * Return: 0 (otherwise)
  */
 
