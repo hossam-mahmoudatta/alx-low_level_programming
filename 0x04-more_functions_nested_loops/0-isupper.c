@@ -3,40 +3,21 @@
 
 /* betty style doc for function main goes there */
 /**
- * times_table - prints the 9 times table
+ * _isupper - checks for an uppercase character
+ *
+ * @c: letter being tested
  *
  * Return: 0 (otherwise)
  */
 
-void times_table(void)
+int _isupper(int c)
 {
-	int i, j, k;
-
-	for (i = 0 ; i < 10 ; i++)
+	if ((c > 64) && (c < 90))
 	{
-		for (j = 0 ; j < 10 ; j++)
-		{
-			k = j * i;
-			if (j == 0)
-			{
-				_putchar(k + '0');
-			}
-
-			if ((k < 10) && (j != 0))
-			{
-			_putchar(',');
-			_putchar(' ');
-			_putchar(' ');
-			_putchar(k + '0');
-			}
-			else if (k >= 10)
-			{
-			_putchar(',');
-			_putchar(' ');
-			_putchar((k / 10) + '0');
-			_putchar((k % 10) + '0');
-			}
-		}
-		_putchar('\n');
+		return (1);
+	}
+	else
+	{
+		return (0);
 	}
 }
