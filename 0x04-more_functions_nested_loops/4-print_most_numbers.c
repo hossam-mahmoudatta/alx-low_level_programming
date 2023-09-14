@@ -21,6 +21,11 @@ void print_most_numbers(void)
 			num++;
 			i++;
 		}
+		else
+		{
+			num++;
+			i++;
+		}
 	}
 	_putchar('\n');
 }
