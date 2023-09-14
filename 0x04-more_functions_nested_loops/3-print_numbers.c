@@ -5,13 +5,11 @@
 /**
  * print_numbers - multiplies two values
  *
- *
  * Return: Nothing
  */
 
 void print_numbers(void)
 {
-	
 	char num = 0;
 	int i = 0;
 
