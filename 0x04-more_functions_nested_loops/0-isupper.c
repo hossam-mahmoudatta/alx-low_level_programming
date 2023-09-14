@@ -7,7 +7,7 @@
  *
  * @c: letter being tested
  *
- * Return: 0 (otherwise)
+ * Return: 1 (otherwise)
  */
 
 int _isupper(int c)
