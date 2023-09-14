@@ -3,7 +3,7 @@
 
 /* betty style doc for function main goes there */
 /**
- * print_most_numbers - multiplies two values
+ * more_numbers - prints number multiple times
  *
  * Return: Nothing
  */
@@ -19,6 +19,6 @@ void more_numbers(void)
 		{
 			putchar(j + '0');
 		}
-	}
 	putchar('\n');
+	}
 }
