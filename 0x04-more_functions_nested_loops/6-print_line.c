@@ -6,7 +6,7 @@
  * print_line - prints a line
  *
  * @n: letter being tested
- * 
+ *
  * Return: void
  */
 
