@@ -4,7 +4,7 @@
 /* betty style doc for function main goes there */
 /**
  * print_triangle - prints number multiple times
- * 
+ *
  * @size: letter being tested
  *
  * Return: Nothing
@@ -17,7 +17,7 @@ void print_triangle(int size)
 
 	for (i = 0; i < size; i++)
 	{
-		for (j = i; j < size ; j++)
+		for (j = i ; j < size ; j++)
 		{
 			putchar(' ');
 		}
