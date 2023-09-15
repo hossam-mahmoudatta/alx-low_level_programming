@@ -3,7 +3,7 @@
 
 /* betty style doc for function main goes there */
 /**
- * print_diagonal - prints a line
+ * print_square - prints a square
  *
  * @size: letter being tested
  *
