@@ -12,27 +12,23 @@
 
 void print_number(int n)
 {
-	int i = 0;
-	int j = 0;
-	int k = 0;
+	unsigned int num1 = 0;
 
-	if (n <= 0)
+	if  (n < 0)
 	{
-		putchar('\n');
+		num1 = -n;
+		_putchar('-');
 	}
+
 	else
 	{
-		for (i = 1; i <= n; i++)
-		{
-			for (k = n - i ; k >= 1 ; k--)
-			{
-				putchar(' ');
-			}
-			for (j = 1; j <= i; j++)
-			{
-				putchar('#');
-			}
-			putchar('\n');
-		}
+		num1 = n;
 	}
+
+	if (num1 / 10)
+	{
+		print_number(num1 / 10);
+	}
+
+	_putchar((num1 % 10) + '0');
 }
