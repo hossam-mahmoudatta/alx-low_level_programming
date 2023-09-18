@@ -6,6 +6,7 @@
 #include <stdio.h>
 
 extern int _putchar(char c);
+void reset_to_98(int *n);
 extern int _isupper(int c);
 extern int _isdigit(int c);
 extern int mul(int a, int b);
