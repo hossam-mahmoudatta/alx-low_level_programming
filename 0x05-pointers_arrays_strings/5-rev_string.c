@@ -11,7 +11,6 @@
 void rev_string(char *s)
 {
 	int length = 0;
-	char *temp = malloc(length + 1);
 	int i;
 
 	while (s[length] != '\0')
