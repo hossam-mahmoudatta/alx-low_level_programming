@@ -10,5 +10,12 @@
 
 int _strlen(char *s)
 {
-	return ((sizeof(s))/(sizeof(int)));
+	int length = 0;
+
+	while(s[length] != '\0')
+	{
+		length++;
+	}
+
+	return (length);
 }
