@@ -22,5 +22,9 @@ void rev_string(char *s)
 	{
 		temp[i] = s[i]; 
 	}
+	for (i = 0 ; i < length - 1 ; i++)
+	{
+		s[i] = temp[i]; 
+	}
 	printf("\n");
 }
