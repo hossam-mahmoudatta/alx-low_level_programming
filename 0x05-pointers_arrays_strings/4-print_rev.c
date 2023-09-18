@@ -3,7 +3,7 @@
 /**
  * print_rev - a function that prints a string
  *
- * @str: the tested variable
+ * @s: the tested variable
  *
  * Return: None.
  */
