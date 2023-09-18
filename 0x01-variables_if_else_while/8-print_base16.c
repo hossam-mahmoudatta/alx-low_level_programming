@@ -12,13 +12,18 @@
 int main(void)
 {
 	char letter = 'a';
+	int number = 0;
 
-	while (letter <= 'z')
+	while (number < 10)
+	{
+		putchar('0' + number);
+		number++;
+	}
+	while (letter <= 'f')
 	{
 		putchar(letter);
 		letter++;
 	}
-
 	putchar('\n');
 	return (0);
 }

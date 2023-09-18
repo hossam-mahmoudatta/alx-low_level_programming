@@ -11,14 +11,14 @@
  */
 int main(void)
 {
-	char letter = 'a';
+	int number = 0;
 
-	while (letter <= 'z')
+	while (number < 10)
 	{
-		putchar(letter);
-		letter++;
+		printf("%d", number);
+		number++;
 	}
 
-	putchar('\n');
+	printf("\n");
 	return (0);
 }

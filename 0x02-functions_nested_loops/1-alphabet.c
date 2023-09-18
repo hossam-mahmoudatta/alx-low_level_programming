@@ -1,15 +1,14 @@
-#include <stdlib.h>
-#include <time.h>
-#include <stdio.h>
+#include "main.h"
 /* more headers goes there */
 
 /* betty style doc for function main goes there */
 /**
- * main - app start
+ * print_alphabet - prints the alphabet from a to z
  *
  * Return: 0 (Successfully executed)
  */
-int main(void)
+
+void print_alphabet(void)
 {
 	char letter = 'a';
 
@@ -20,5 +19,4 @@ int main(void)
 	}
 
 	putchar('\n');
-	return (0);
 }
