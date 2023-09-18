@@ -1,36 +1,28 @@
 #include "main.h"
 
 /**
- * _atoi - a function that convert string to integer
+ * main - app start
  *
- * @s: the tested variable
- *
- * Return: string
+ * Return: normal
  */
 
-int _atoi(char *s)
+int main (void)
 {
 	int i = 0;
-	int sign = 1;
-	unsigned int result = 0;
+	int min = 1;
+	int max = 100;
+	int randomNumber;
+
 
 	/**
 	 * This block checks the polarity of the number
 	 */
-	while (!(s[i] <= '9' && s[i] >= '0') && s[i] != '\0')
-	{
-		if (s[i] == '-')
-		{
-			sign *= -1;
-		}
-		i++;
-	}
+	srand(time(NULL));
 
-	while (s[i] <= '9' && (s[i] >= '0' && s[i] != '\0'))
+	for (i = 0 ; i < 5 ; i++)
 	{
-		result = (result * 10) + (s[i] - '0');
-		i++;
+		randomNumber = rand() % (max - min + 1) + min;
+		printf("Random Number %d: %d\n", i + 1, randomNumber);
 	}
-	result *= sign;
-	return (result);
+	return (0);
 }
