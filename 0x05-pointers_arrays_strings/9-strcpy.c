@@ -6,7 +6,7 @@
  * @dest: the tested variable
  * @src: the tested variable
  *
- * Return: None.
+ * Return: string
  */
 
 char *_strcpy(char *dest, char *src)
@@ -23,5 +23,5 @@ char *_strcpy(char *dest, char *src)
 	{
 		dest[i] = src[i];
 	}
-	printf("\n");
+	return *dest;
 }
