@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * string_toupper - function to change lowercase to uppercase
+ * cap_string - function to change lowercase to uppercase
  *
- * @c: the tested variable
+ * @s: the tested variable
  *
- * Return: void
+ * Return: char
  */
 
 char *cap_string(char *s)
