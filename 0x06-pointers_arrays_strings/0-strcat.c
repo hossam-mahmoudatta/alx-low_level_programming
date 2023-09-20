@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _strcpy - a function that prints a string
+ * _strcat - a function that appends two strings
  *
  * @dest: the tested variable
  * @src: the tested variable
