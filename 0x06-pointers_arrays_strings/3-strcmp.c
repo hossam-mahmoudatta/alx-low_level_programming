@@ -1,11 +1,10 @@
 #include "main.h"
 
 /**
- * _strncpy - a function that appends two strings
+ * _strcmp - a function that compares two strings
  *
- * @dest: the tested variable
- * @src: the tested variable
- * @n: the tested variable
+ * @s1: the tested variable
+ * @s2: the tested variable
  *
  * Return: string
  */
