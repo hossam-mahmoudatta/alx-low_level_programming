@@ -8,11 +8,10 @@
  * Return: void
  */
 
-char *cap_string(char *c)
+char *cap_string(char *s)
 {
-	int i;
+	int i = 0;
 
-	i = 0;
 	while (s[i] != '\0')
 	{
 		if ((s[i - 1] == ' ' || s[i - 1] == '\n'
