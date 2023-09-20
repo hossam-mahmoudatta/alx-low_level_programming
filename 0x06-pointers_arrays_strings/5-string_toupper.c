@@ -1,7 +1,8 @@
 #include "main.h"
 
 /**
- * string_toupper - function to change lowercase to uppercase
+ * string_toupper - function to change lowercase 
+ * to uppercase
  *
  * @c: the tested variable
  *
