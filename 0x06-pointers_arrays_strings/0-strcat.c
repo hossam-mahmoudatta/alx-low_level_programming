@@ -12,7 +12,7 @@
 char *_strcat(char *dest, char *src)
 {
 	int length = 0;
-	int i;
+	int i = 0;
 
 	while (src[length] != '\0')
 	{
