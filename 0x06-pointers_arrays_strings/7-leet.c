@@ -20,7 +20,7 @@ char *leet(char *s)
 	{
 		int j = 0;
 		int k = 0;
-		
+
 		while (text[j] != '\0')
 		{
 			if (s[i] == text[j])
