@@ -1,34 +1,56 @@
 #include "main.h"
 
 /**
- * print_number - function to change lowercase to uppercase
- *
- * @n: the tested variable
- *
- * Return: None (Void)
+ * base10 - power in 10 base
+ * @n: an exponent
+ * Return: returns 10 to power exponent
+ */
+
+int base10(int n)
+{
+	int base = 10;
+
+	while (n > 0)
+	{
+		base *= 10;
+		n--;
+	}
+	return (base);
+}
+
+/**
+ * print_number - prints integers
+ * @n: integer to print
+ * Return: void
  */
 
 void print_number(int n)
 {
-	int i = 0;
+	int power;
 
-	char text[] = "oOlLeEaAtT";
-	char nums[] = "0011334477";
+	power = base10(8);
 
-	while (s[i] != '\0')
+	if (n < 0)
 	{
-		int j = 0;
-		int k = 0;
+		_putchar('-');
+		n *= -1;
+	}
 
-		while (text[j] != '\0')
+	if (n == 0)
+	{
+		_putchar('0');
+	}
+	else
+	{
+		while (n / power == 0)
 		{
-			if (s[i] == text[j])
-			{
-				k = j;
-				s[i] = nums[k];
-			}
-			j++;
+			power /= 10;
 		}
-		i++;
+		while (power >= 1)
+		{
+			_putchar((n / power) + '0');
+			n %= power;
+			power /= 10;
+		}
 	}
 }
