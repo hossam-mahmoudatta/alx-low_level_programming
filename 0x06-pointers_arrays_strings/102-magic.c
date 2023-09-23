@@ -6,7 +6,7 @@
  * Return: returns 10 to power exponent
  */
 
-int base10(int n)
+int main(void)
 {
 	int base = 10;
 
@@ -15,5 +15,5 @@ int base10(int n)
 		base *= 10;
 		n--;
 	}
-	return (base);
+	return (0);
 }
