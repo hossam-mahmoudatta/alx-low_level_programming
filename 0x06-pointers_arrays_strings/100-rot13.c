@@ -12,22 +12,17 @@ char *rot13(char *s)
 {
 	int i = 0;
 
-	char text[] = "oOlLeEaAtT";
-	char nums[] = "0011334477";
-
 	while (s[i] != '\0')
 	{
-		int j = 0;
-		int k = 0;
-
-		while (text[j] != '\0')
+		while ((s[i] >= 'a' && s[i] <= 'z') ||
+				(s[i] >= 'A' && s[i] <= 'Z'))
 		{
-			if (s[i] == text[j])
-			{
-				k = j;
-				s[i] = nums[k];
-			}
-			j++;
+			if ((s[i] >= 'a' && s[i] <= 'm') ||
+					(s[i] >= 'A' && s[i] <= 'M'))
+				s[i] += 13;
+			else
+				s[i] -= 13;
+			i++;
 		}
 		i++;
 	}
