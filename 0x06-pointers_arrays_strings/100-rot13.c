@@ -1,16 +1,17 @@
 #include "main.h"
 
 /**
- * leet - function to change lowercase to uppercase
+ * rot13 - function to change lowercase to uppercase
  *
  * @s: the tested variable
  *
  * Return: char
  */
 
-char *leet(char *s)
+char *rot13(char *s)
 {
 	int i = 0;
+
 	char text[] = "oOlLeEaAtT";
 	char nums[] = "0011334477";
 
