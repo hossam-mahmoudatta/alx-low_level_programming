@@ -14,17 +14,17 @@ char *leet(char *s)
 	int j = 0;
 	int k = 0;
 
-	char l[] = "oOlLeEaAtT";
-	char e[] = "0011334477";
+	char text[] = "oOlLeEaAtT";
+	char nums[] = "0011334477";
 
 	while (s[i] != '\0')
 	{
-		while (l[j] != '\0')
+		while (text[j] != '\0')
 		{
-			if (s[i] == l[j])
+			if (s[i] == text[j])
 			{
 				k = j;
-				s[i] = e[k];
+				s[i] = nums[k];
 			}
 			j++;
 		}
