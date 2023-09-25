@@ -46,5 +46,5 @@ char *_strpbrk(char *s, char *accept)
 		 * in a very smart way
 		 */
 	}
-	return (counter);
+	return (s);
 }
