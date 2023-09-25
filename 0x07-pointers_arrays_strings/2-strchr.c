@@ -11,8 +11,8 @@
 
 char *_strchr(char *s, char c)
 {
-	unsigned int i = 0;
-    unsigned int k = 0;
+	int i = 0;
+	int k = 0;
 
 	while (s[i] != c)
 	{
