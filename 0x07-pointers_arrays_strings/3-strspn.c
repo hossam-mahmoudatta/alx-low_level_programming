@@ -12,18 +12,21 @@
 unsigned int _strspn(char *s, char *accept)
 {
 	int counter = 0;
+	int i = 0;
+	int k = 0;
 
-	while (*s != '\0')
+	while (s[i] != '\0')
 	{
-		while (*accept != '\0')
+		while (accept[k] != '\0')
 		{
-			if (*s == *accept)
+			if (s[i] == accept[k])
 			{
 				counter++;
 			}
-			accept++;
+			k++;
 		}
-		s++;
+		k = 0;
+		i++;
 
 		/**
 		 * when i loop on ' *s ', when i s++
