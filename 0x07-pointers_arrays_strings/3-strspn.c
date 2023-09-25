@@ -1,23 +1,29 @@
 #include "main.h"
 
 /**
- * _strchr - a function that locates a char in a string
+ * _strspn - a function that gets the length of a prefix substring.
  *
  * @s: the tested variable
- * @c: the tested variable
+ * @accept: the tested variable
  *
  * Return: string
  */
 
 unsigned int _strspn(char *s, char *accept)
 {
-	while (*s != '\0')
+	int counter = 0;
+
+    while (*s != '\0')
 	{
-		if (*s == c)
+		while (*accept != '\0')
 		{
-			return (s);
+		    if (*s == *accept)
+            {
+                counter++;
+            }
+            accept++;
 		}
-		s++;
+        s++;
 
 		/**
 		 * when i loop on ' *s ', when i s++
@@ -26,11 +32,5 @@ unsigned int _strspn(char *s, char *accept)
 		 * in a very smart way
 		 */
 	}
-
-	if (*s == c)
-	{
-		return (s);
-	}
-
-	return (0);
+	return (counter);
 }
