@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _strncpy - a function that appends two strings
+ * _memset - a function that assigns a value to specified memory
  *
  * @s: the tested variable
  * @b: the tested variable
@@ -14,10 +14,10 @@ char *_memset(char *s, char b, unsigned int n)
 {
 	int i = 0;
 
-    for (i = 0 ; i < n ; i++)
-    {
-        s[i] = b;
-    }
+	for (i = 0 ; i < n ; i++)
+	{
+		s[i] = b;
+	}
 
-    return (s);
+	return (s);
 }
