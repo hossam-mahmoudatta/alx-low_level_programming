@@ -11,9 +11,6 @@
 
 char *_strchr(char *s, char c)
 {
-    unsigned int i = 0;
-    unsigned int k = 0;
-
 	while (*s != '\0')
 	{
 		if (*s == c)
@@ -21,7 +18,15 @@ char *_strchr(char *s, char c)
 			return (s);
 		}
 		s++;
+
+		/**
+		 * when i loop on ' *s ', when i s++
+		 * then i point at the next location
+		 * therefore i'm reducing the string
+		 * in a very smart way
+		 */
 	}
+
 	if (*s == c)
 	{
 		return (s);
