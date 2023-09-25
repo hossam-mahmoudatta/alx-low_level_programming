@@ -4,6 +4,7 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
+#include <string.h>
 
 extern int _putchar(char c);
 char *_memset(char *s, char b, unsigned int n);

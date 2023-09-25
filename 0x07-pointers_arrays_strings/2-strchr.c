@@ -12,17 +12,20 @@
 char *_strchr(char *s, char c)
 {
 	unsigned int i = 0;
-	char *output;
+    unsigned int k = 0;
 
 	while (s[i] != c)
 	{
 		i++;
 	}
 
+	char* output = (char*)malloc (strlen(s) - i);
+
 	while (s[i] != '\0')
 	{
-		output[i] = s[i];
+		output[k] = s[i];
 		i++;
+		k++;
 	}
 
 	return (output);
