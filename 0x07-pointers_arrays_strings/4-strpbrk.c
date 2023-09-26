@@ -14,18 +14,18 @@ char *_strpbrk(char *s, char *accept)
 	int i = 0;
 	int k = 0;
 
-	while (s[i] != '\0')
+	while (*s != '\0')
 	{
-		while (accept[k] != '\0')
+		while (accept[i] != '\0')
 		{
-			if (s[i] == accept[k])
+			if (*s == accept[i])
 			{
-				return (s[i]);
+				return (s);
 			}
-			k++;
+			i++;
 		}
-		k = 0;
-		i++;
+		i = 0;
+		s++;
 
 		/**
 		 * when i loop on ' *s ', when i s++
