@@ -4,11 +4,13 @@
  * print_chessboard - a function that prints the chess board
  *
  * @a: the tested variable
+ *
+ * Return: Void
  */
 
 void print_chessboard(char (*a)[8])
 {
-    int row = 0;
+	int row = 0;
 	int col = 0;
 
 	for (row = 0 ; row < 8 ; row++)
