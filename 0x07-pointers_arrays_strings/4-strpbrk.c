@@ -11,31 +11,20 @@
 
 char *_strpbrk(char *s, char *accept)
 {
-	int counter = 0;
 	int i = 0;
 	int k = 0;
-	int flag = 0;
 
 	while (s[i] != '\0')
 	{
 		while (accept[k] != '\0')
 		{
-			flag = 0;
-
 			if (s[i] == accept[k])
 			{
-				counter++;
 				flag = 1;
-				break;
+				return (s[i]);
 			}
 			k++;
 		}
-
-		if (flag == 0)
-		{
-			return (counter);
-		}
-
 		k = 0;
 		i++;
 
@@ -46,5 +35,4 @@ char *_strpbrk(char *s, char *accept)
 		 * in a very smart way
 		 */
 	}
-	return (s);
 }
