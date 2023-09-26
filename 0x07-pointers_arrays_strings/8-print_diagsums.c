@@ -19,12 +19,12 @@ void print_diagsums(int *a, int size)
 	{
 		diag1 += a[i * size + i];
 		diag2 += a[i * size + (size - 1 - i)];
-		
+
 		/**
 		 * The code is abt transforming
 		 * 2d array into a 1d array
 		 */
 	}
-	printf("%d, ", diag1);
-	printf("%d\n", diag2);
+	printf ("%d, ", diag1);
+	printf ("%d\n", diag2);
 }
