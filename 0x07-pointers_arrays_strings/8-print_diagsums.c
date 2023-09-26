@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_diagsums - a function that prints the chess board
+ * print_diagsums - a function that prints the sum of the diagonals
  *
  * @a: the tested variable
  * @size: the tested variable
@@ -11,13 +11,20 @@
 
 void print_diagsums(int *a, int size)
 {
-	int row = 0;
-	int col = 0;
-	int sum = 0;
+	int i = 0;
+	int diag1 = 0;
+	int diag2 = 0;
 
-	for (row = 0 ; row < size ; row++)
+	for (i = 0 ; i < size ; i++)
 	{
-		sum += a[row][col];
-		col++;
+		diag1 += a[i * size + i];
+		diag2 += a[i * size + (size - 1 - i)];
+		
+		/**
+		 * The code is abt transforming
+		 * 2d array into a 1d array
+		 */
 	}
+	printf("%d, ", diag1);
+	printf("%d\n", diag2);
 }
