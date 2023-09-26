@@ -17,8 +17,8 @@ void print_chessboard(char (*a)[8])
 	{
 		for (col = 0 ; col < 8 ; col++)
 		{
-			_putchar (*(*(row + a) + col));
+			_putchar(*(*(row + a) + col));
 		}
-		_putchar ('\n');
+		_putchar('\n');
 	}
 }
