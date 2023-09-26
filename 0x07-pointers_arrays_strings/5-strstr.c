@@ -11,41 +11,25 @@
 
 char *_strstr(char *haystack, char *needle)
 {
-    if (*needle == '\0')
+	char *outputValue = haystack;
+	char *maskNeedle = needle;
+
+	while (*haystack)
 	{
-        return (char *)haystack;
-    }
-
-    while (*haystack)
-	{
-        const char *start = haystack;
-
-        /**
-         * Try to match the needle with the haystack
-         */
-        while (*haystack && *needle && *haystack == *needle)
+		while (*needle)
 		{
-            haystack++;
-            needle++;
-        }
-
-		/**
-		 * If the needle is fully matched, return the starting position
-		 */
-        if (*needle == '\0')
+			if (*haystack++ != *needle++)
+			{
+				break;
+			}
+		}
+		if (!*needle)
 		{
-            return (char *)start;
-        }
-
-		/**
-		 * Otherwise, reset the haystack to the next character
-		 */
-        haystack = start + 1;
-        needle = start + 1;
-    }
-
-    /**
-     * If the needle is not found in the haystack, return NULL
-     */
-	return (NULL);
+			return (outputValue);
+		}
+		needle = maskNeedle;
+		outputValue++;
+		haystack = outputValue;
+	}
+	return (0);
 }
