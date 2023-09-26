@@ -24,6 +24,7 @@ void print_diagsums(int *a, int size)
 		 * The code is abt transforming
 		 * 2d array into a 1d array
 		 */
+		
 	}
 	printf ("%d, ", diag1);
 	printf ("%d\n", diag2);
