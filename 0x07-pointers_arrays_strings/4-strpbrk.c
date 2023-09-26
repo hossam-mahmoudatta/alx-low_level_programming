@@ -20,7 +20,6 @@ char *_strpbrk(char *s, char *accept)
 		{
 			if (s[i] == accept[k])
 			{
-				flag = 1;
 				return (s[i]);
 			}
 			k++;
@@ -35,4 +34,5 @@ char *_strpbrk(char *s, char *accept)
 		 * in a very smart way
 		 */
 	}
+	return (NULL);
 }
