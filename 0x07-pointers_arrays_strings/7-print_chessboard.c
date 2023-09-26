@@ -4,8 +4,6 @@
  * print_chessboard - a function that prints the chess board
  *
  * @a: the tested variable
- *
- * Return: Void
  */
 
 void print_chessboard(char (*a)[8])
