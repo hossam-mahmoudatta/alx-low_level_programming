@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * is_prime_number - func that returns 1 if i/p is prime
+ * is_palindrome - func that returns 1 if i/p is prime
  *
- * @n: the tested variable
+ * @s: the tested variable
  *
  * Return: Integer
  */
