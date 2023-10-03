@@ -11,11 +11,11 @@
 
 int main(int argc, char __attribute__((__unused__)) *argv[])
 {
-	
-    while (argc >= 0)
+	int arg;
+
+    for (arg = 0 ; arg < argc ; arg++)
     {
-		printf("%s\n", argv[argc]);
-		argc--;
+		printf("%s\n", argv[arg]);
     }
 
 	return (0);
