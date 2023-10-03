@@ -11,12 +11,7 @@
 
 int main(int argc, char __attribute__((__unused__)) *argv[])
 {
-	
-    while (argc >= 0)
-    {
-		printf("%s\n", argv[argc]);
-		argc--;
-    }
+	printf("%d\n", argc - 1);
 
 	return (0);
 }
