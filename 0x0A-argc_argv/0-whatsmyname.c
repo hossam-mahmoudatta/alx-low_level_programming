@@ -1,13 +1,15 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
- * main - a function that compares two strings
+ * main - Prints the program name, followed by a new line.
+ * @argc: The number of arguments supplied to the program.
+ * @argv: An array of pointers to the arguments.
  *
- * Return: 0
+ * Return: Always o.
  */
-
-int main(void)
+int main(int __attribute__((__unused__)) argc, char *argv[])
 {
-    _puts("\"At the end of the day, my goal was to be the best hacker\"\n\t- Kevin Mitnick");
-    return (0);
+	printf("%s\n", argv[0]);
+
+	return (0);
 }
