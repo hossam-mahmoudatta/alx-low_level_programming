@@ -44,7 +44,7 @@ char *argstostr(int ac, char **av)
             argumentConcat[argIndex++] = av[i][j];
 		
         if (i < ac - 1)
-            argumentConcat[argIndex++] = '\n ';
+            argumentConcat[argIndex++] = "\n ";
 	}
 
 	argumentConcat[argIndex] = '\0';
