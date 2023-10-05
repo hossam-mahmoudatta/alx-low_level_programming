@@ -1,31 +1,36 @@
 #include "main.h"
 
 /**
- * _strcat - a function that appends two strings
+ * create_array - a function that creates an array of
+ * chars, and initializes it with a specific char.
  *
- * @dest: the tested variable
- * @src: the tested variable
+ * @size: the tested variable
+ * @c: the tested variable
  *
  * Return: string
  */
 
-char *_strcat(char *dest, char *src)
+char *create_array(unsigned int size, char c)
 {
-	int length = 0;
-	int i = 0;
+	char *testString;
+	unsigned int i;
 
-	while (dest[length] != '\0')
+	if (size == 0)
 	{
-		length++;
+		return (NULL);
 	}
 
-	while (src[i] != '\0')
-	{
-		dest[length] = src[i];
-		i++;
-		length++;
-	}
-	dest[length] = '\0';
+    testString = malloc(sizeof(c) * size);
 
-	return (dest);
+	if (testString == NULL)
+	{
+		return (NULL);
+	}
+    
+	for ( i = 0 ; i < size ; i++)
+	{
+		testString[i] = c;
+	}
+
+	return (testString);
 }
