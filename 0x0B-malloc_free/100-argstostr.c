@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * argstostr - function that concatenates all the 
+ * argstostr - function that concatenates all the
  * arguments of your program.
  *
  * @ac: the tested variable
@@ -41,10 +41,10 @@ char *argstostr(int ac, char **av)
 	for (i = 0 ; i < ac ; i++)
 	{
 		for ( j = 0 ; av[i][j] != '\0' ; j++)
-            argumentConcat[argIndex++] = av[i][j];
-		
-        if (i < ac - 1)
-            argumentConcat[argIndex++] = '\n';
+			argumentConcat[argIndex++] = av[i][j];
+
+		if (i < ac - 1)
+			argumentConcat[argIndex++] = '\n';
 	}
 
 	argumentConcat[argIndex] = '\0';
