@@ -19,7 +19,7 @@ char *_strdup(char *str)
 		return (NULL);
 	}
 
-	for (strLength = 0 ; duplicateString[strLength] ; strLength++)
+	for (strLength = 0 ; str[strLength] ; strLength++)
 	{
 
 	}
