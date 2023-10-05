@@ -13,7 +13,7 @@
 int **alloc_grid(int width, int height)
 {
 	char *gridElements;
-	unsigned int i, j;
+	int i, j;
 
 	if (width < 1 || height < 1)
 	{
