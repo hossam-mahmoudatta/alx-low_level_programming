@@ -13,7 +13,7 @@
 char *argstostr(int ac, char **av)
 {
 	char *argumentConcat;
-	int i, j, k, argIndex = 0;
+	int i, j, argIndex = 0;
 	int totalLength = 0;
 
 	if (ac == 0 || av == NULL)
@@ -40,7 +40,7 @@ char *argstostr(int ac, char **av)
 
 	for (i = 0 ; i < ac ; i++)
 	{
-		for (int j = 0 ; av[i][j] != '\0' ; j++)
+		for ( j = 0 ; av[i][j] != '\0' ; j++)
             argumentConcat[argIndex++] = av[i][j];
 		
         if (i < ac - 1)
