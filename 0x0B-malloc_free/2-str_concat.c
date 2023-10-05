@@ -14,7 +14,7 @@
 char *str_concat(char *s1, char *s2)
 {
 	char *concatString;
-	unsigned int s1Length, s2Length, s1End, i, j;
+	unsigned int s1Length, s2Length, i, j;
 
 	if (s1 == NULL && s2 == NULL)
 	{
@@ -44,8 +44,6 @@ char *str_concat(char *s1, char *s2)
 	{
 		concatString[i] = s1[i];
 	}
-
-	s1End = i;
 
 	for (j = 0 ; j <= s2Length ; j++, i++)
 	{
