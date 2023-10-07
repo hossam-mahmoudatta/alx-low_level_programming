@@ -12,7 +12,7 @@
 
 int main(int argc, char *argv[])
 {
-	int pennies1 = 0, nickels5 = 0, dimes10 = 0, quarter25 = 0, cents2 = 0, totalCoins = 0;
+	int totalCoins = 0;
 
 	if (argc != 2)
 	{
