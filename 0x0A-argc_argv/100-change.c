@@ -13,20 +13,53 @@
 int main(int argc, char const *argv[])
 {
 	int argCounter, argValue, sum = 0;
+	int integerNum = atoi(argv[1]);
+	int pennies1 = 0, nickels5 = 0, dimes10 = 0, quarter25 = 0, totalCoins = 0;
 
-	for (argCounter = 1; argCounter < argc; argCounter++)
+	if (argc != 1)
 	{
-		for (argValue = 0; argv[argCounter][argValue]; argValue++)
-		{
-			if (argv[argCounter][argValue] < '0' || argv[argCounter][argValue] > '9')
-			{
-				printf("Error\n");
-				return (1);
-			}
-		}
-		sum += atoi(argv[argCounter]);
+		printf("Error\n");
+		return (1);
 	}
-	printf("%d\n", sum);
+
+	if (integerNum < 0)
+	{
+		printf("0\n");
+		return (0);
+	}
+
+	while (integerNum > 0)
+	{
+		if (integerNum > 25)
+		{
+			quarter25++;
+			integerNum -= 25;
+			totalCoins++;
+		}
+		
+		else if (integerNum > 10)
+		{
+			dimes10++;
+			integerNum -= 10;
+			totalCoins++;
+		}
+
+		else if (integerNum > 5)
+		{
+			nickels5++;
+			integerNum -= 5;
+			totalCoins++;
+		}
+
+		else if (integerNum > 1)
+		{
+			pennies1++;
+			integerNum -= 1;
+			totalCoins++;
+		}
+	}
+
+	printf("%d\n", totalCoins);
 
 	return (0);
 }
