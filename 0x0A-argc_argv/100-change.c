@@ -14,7 +14,7 @@ int main(int argc, char const *argv[])
 {
 	int pennies1 = 0, nickels5 = 0, dimes10 = 0, quarter25 = 0, totalCoins = 0;
 
-	if (argc != 1)
+	if (argc != 2)
 	{
 		printf("Error\n");
 		return (1);
@@ -30,32 +30,26 @@ int main(int argc, char const *argv[])
 
 	while (integerNum > 0)
 	{
-		if (integerNum > 25)
+		totalCoins++;
+
+		if ((integerNum - 25) >= 0)
 		{
-			quarter25++;
 			integerNum -= 25;
-			totalCoins++;
 		}
 		
-		else if (integerNum > 10)
+		else if ((integerNum - 10) >= 0)
 		{
-			dimes10++;
 			integerNum -= 10;
-			totalCoins++;
 		}
 
-		else if (integerNum > 5)
+		else if ((integerNum - 5) >= 0)
 		{
-			nickels5++;
 			integerNum -= 5;
-			totalCoins++;
 		}
 
-		else if (integerNum > 1)
+		else if ((integerNum - 1) >= 0)
 		{
-			pennies1++;
 			integerNum -= 1;
-			totalCoins++;
 		}
 	}
 
