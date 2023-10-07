@@ -12,8 +12,6 @@
 
 int main(int argc, char const *argv[])
 {
-	int argCounter, argValue, sum = 0;
-	int integerNum = atoi(argv[1]);
 	int pennies1 = 0, nickels5 = 0, dimes10 = 0, quarter25 = 0, totalCoins = 0;
 
 	if (argc != 1)
@@ -21,6 +19,8 @@ int main(int argc, char const *argv[])
 		printf("Error\n");
 		return (1);
 	}
+
+	int integerNum = atoi(argv[1]);
 
 	if (integerNum < 0)
 	{
