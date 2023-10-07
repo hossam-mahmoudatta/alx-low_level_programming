@@ -22,42 +22,25 @@ int main(int argc, char const *argv[])
 
 	int integerNum = atoi(argv[1]);
 
-	if (integerNum < 0)
-	{
-		printf("0\n");
-		return (0);
-	}
-
 	while (integerNum > 0)
 	{
 		totalCoins++;
 
 		if ((integerNum - 25) >= 0)
-		{
 			integerNum -= 25;
-		}
 		
 		else if ((integerNum - 10) >= 0)
-		{
 			integerNum -= 10;
-		}
 
 		else if ((integerNum - 5) >= 0)
-		{
 			integerNum -= 5;
-		}
 
 		else if ((integerNum - 2) >= 0)
-		{
 			integerNum -= 2;
-		}
 
 		else if ((integerNum - 1) >= 0)
-		{
 			integerNum -= 1;
-		}
 	}
-
 	printf("%d\n", totalCoins);
 
 	return (0);
