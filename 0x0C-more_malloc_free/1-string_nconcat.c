@@ -23,8 +23,8 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	char *memAllocate = malloc(sizeof(char) * (Length + 1));
 
-	if (memAllocate == NULL)
-		return NULL;
+	if (memAllocate < 0)
+		return (NULL);
 
 	if (s1 == NULL)
 		s1 = "";
