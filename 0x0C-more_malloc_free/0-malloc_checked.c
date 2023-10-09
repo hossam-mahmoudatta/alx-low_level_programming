@@ -15,5 +15,5 @@ void *malloc_checked(unsigned int b)
 	if (memAllocate == NULL)
 		exit (98);
 
-	return (memAllocate);
+	return(memAllocate);
 }
