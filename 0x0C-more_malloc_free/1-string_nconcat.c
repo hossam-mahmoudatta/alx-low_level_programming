@@ -7,14 +7,14 @@
  * @s2: The tested variable
  * @n: The tested variable
  *
- * Return: Nothing
+ * Return: string
  */
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {	
-	unsigned int i = 0, j = 0;
+	int i = 0, j = 0;
 
-	if (n >= strlen(s2);)
+	if (n >= strlen(s2))
 		n = strlen(s2);
 
 	int Length = strlen(s1) + n + 1;
