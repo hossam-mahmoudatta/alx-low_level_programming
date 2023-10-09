@@ -10,14 +10,10 @@
 
 void *malloc_checked(unsigned int b)
 {
-	int *memAllocate;
-	memAllocate = malloc(sizeof(int) * b);
+	void *memAllocate = malloc(b);
 
 	if (memAllocate == NULL)
-	{
-		printf("Status '98'\n");
-		return (1);
-	}
+		exit (98);
 
-	return (0);
+	return (memAllocate);
 }
