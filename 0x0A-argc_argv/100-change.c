@@ -9,7 +9,7 @@
  * Return: Always 0.
  */
 
-char *string_nconcat(char *s1, char *s2, unsigned int n)
+int main(int argc, char *argv[])
 {
 	int integerNum, totalCoins = 0;
 
