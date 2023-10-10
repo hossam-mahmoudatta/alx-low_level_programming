@@ -3,9 +3,9 @@
 /**
  * string_nconcat - a function that concatenates two strings
  *
- * @s1: The tested variable
- * @s2: The tested variable
- * @n: The tested variable
+ * @s1: The tested variable.
+ * @s2: The tested variable.
+ * @n: The tested variable.
  *
  * Return: string
  */
