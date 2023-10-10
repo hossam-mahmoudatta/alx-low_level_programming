@@ -18,7 +18,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (n >= _strlen(s2))
 		n = _strlen(s2);
 
-	int Length = _strlen(s1) + n + 1;
+	unsigned int Length = _strlen(s1) + n + 1;
 
 	memAllocate = (char *)malloc(sizeof(char) * Length);
 
