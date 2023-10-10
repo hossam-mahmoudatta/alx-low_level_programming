@@ -13,13 +13,14 @@
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {	
 	unsigned int i, j;
+	char *memAllocate;
 
 	if (n >= _strlen(s2))
 		n = _strlen(s2);
 
 	int Length = _strlen(s1) + n + 1;
 
-	char *memAllocate = malloc(sizeof(char) * Length);
+	memAllocate = malloc(sizeof(char) * Length);
 
 	if (memAllocate == NULL)
 		return (NULL);
