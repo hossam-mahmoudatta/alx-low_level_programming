@@ -19,7 +19,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	int Length = _strlen(s1) + n + 1;
 
-	char *memAllocate = malloc(Length);
+	char *memAllocate = malloc(sizeof(char) * Length);
 
 	if (memAllocate == NULL)
 		return (NULL);
@@ -30,10 +30,10 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (s2 == NULL)
 		s2 = "";
 
-    for (i = 0 ; s1[i] != '\0' ; i++)
+	for (i = 0 ; s1[i] != '\0' ; i++)
 		memAllocate[i] = s1[i];
 
-    for (j = 0 ; j < n ; j++)
+	for (j = 0 ; j < n ; j++)
 	{
 		memAllocate[i + j] = s2[j];
 		i++;
