@@ -2,6 +2,7 @@
 #define _HEADER_
 
 #include <stdlib.h>
+#include <stdio.h>
 
 /**
  * struct dog - Dog attributes
