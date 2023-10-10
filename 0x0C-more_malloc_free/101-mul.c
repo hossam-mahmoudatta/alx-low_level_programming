@@ -2,9 +2,9 @@
 
 /**
  * main - multiplies two positive numbers
- * @argc: n arguments
+ * @argc: Test var
  * @argv: args
- * Return: int
+ * Return: 0
  */
 
 int main(int argc, char *argv[])
