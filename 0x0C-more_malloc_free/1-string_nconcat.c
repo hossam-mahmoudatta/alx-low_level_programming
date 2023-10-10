@@ -31,19 +31,15 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (s2 == NULL)
 		s2 = "";
 
-    while (s1[i] != '\0')
-	{
-        memAllocate[i] = s1[i];
-        i++;
-    }
+    for (i = 0 ; s1[i] != '\0' ; i++)
+		memAllocate[i] = s1[i];
 
-	while (j < n)
+    for (j = 0 ; j < n ; j++)
 	{
 		memAllocate[i + j] = s2[j];
-		j++;
-    }
-	
-	memAllocate[Length] = '\0';
+		i++;
+	}
+	memAllocate[i] = '\0';
 
 	return (memAllocate);
 }
