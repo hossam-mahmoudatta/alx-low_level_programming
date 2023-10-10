@@ -12,7 +12,7 @@
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {	
-	unsigned int i, j;
+	int i, j;
 	char *memAllocate;
 
 	if (n >= _strlen(s2))
