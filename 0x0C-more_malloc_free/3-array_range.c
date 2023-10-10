@@ -12,19 +12,22 @@
 int *array_range(int min, int max)
 {
 	unsigned int i;
-	char *memAllocate;
+	unsigned int j = 0;
+	int *memAlloc;
 
-	if (nmemb == 0 || size == 0)
+	if (min > max)
 		return (NULL);
 
-	memAllocate = malloc(nmemb * size);
+	memAlloc = malloc(max - min + 1);
 
-	if (memAllocate == NULL)
+	if (memAlloc == NULL)
 		return (NULL);
 
-	for (i = 0 ; i < (nmemb * size) ; i++)
-		*((char *)(memAllocate) + i) = 0;
+	for (i = min ; i <= max ; i++)
+	{
+		*(memAlloc + j) = i;
+		j++;
+	}
 
-
-	return (memAllocate);
+	return (memAlloc);
 }
