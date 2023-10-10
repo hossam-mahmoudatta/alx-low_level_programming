@@ -12,21 +12,21 @@
 int *array_range(int min, int max)
 {
 	unsigned int i;
-	unsigned int j = 0;
+	int range;
 	int *memAlloc;
+	range = ((max + 1) - min);
 
 	if (min > max)
 		return (NULL);
 
-	memAlloc = malloc(max - min + 1);
+	memAlloc = malloc(sizeof(int) * range);
 
 	if (memAlloc == NULL)
 		return (NULL);
 
-	for (i = min ; i <= max ; i++)
+	for (i = 0 ; i < range ; i++)
 	{
-		*(memAlloc + j) = i;
-		j++;
+		*(memAlloc + i) = min + i;
 	}
 
 	return (memAlloc);
