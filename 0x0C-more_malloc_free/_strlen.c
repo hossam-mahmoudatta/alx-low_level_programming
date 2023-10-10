@@ -9,7 +9,7 @@
  */
 
 
-int _strlen(char *string)
+int _strlen(const char *string)
 {
 	int i;
 
