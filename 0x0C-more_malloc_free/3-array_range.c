@@ -1,15 +1,15 @@
 #include "main.h"
 
 /**
- * _calloc - allocates memory of an array using malloc.
+ * array_range - creates an array of integers.
  *
- * @nmemb: The tested variable.
- * @size: The tested variable.
+ * @min: The tested variable.
+ * @max: The tested variable.
  *
  * Return: Empty
  */
 
-void *_calloc(unsigned int nmemb, unsigned int size)
+int *array_range(int min, int max)
 {
 	unsigned int i;
 	char *memAllocate;
