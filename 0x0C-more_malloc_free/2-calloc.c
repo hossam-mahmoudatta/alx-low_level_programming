@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _calloc - a function that concatenates two strings
+ * _calloc - allocates memory of an array using malloc.
  *
  * @nmemb: The tested variable.
  * @size: The tested variable.
@@ -11,7 +11,7 @@
 
 void *_calloc(unsigned int nmemb, unsigned int size)
 {	
-	unsigned int i, j;
+	unsigned int i;
 
 	if (nmemb == 0 || size == 0)
 		return (NULL);
