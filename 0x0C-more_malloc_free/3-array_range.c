@@ -14,7 +14,7 @@ int *array_range(int min, int max)
 	unsigned int i;
 	int range;
 	int *memAlloc;
-	
+
 	range = ((max + 1) - min);
 
 	if (min > max)
@@ -26,9 +26,7 @@ int *array_range(int min, int max)
 		return (NULL);
 
 	for (i = 0 ; i < range ; i++)
-	{
 		*(memAlloc + i) = min + i;
-	}
 
 	return (memAlloc);
 }
