@@ -19,7 +19,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	int Length = _strlen(s1) + n + 1;
 
-	char *memAllocate = malloc(sizeof(char) * Length);
+	char *memAllocate = malloc(Length);
 
 	if (memAllocate == NULL)
 		return (NULL);
