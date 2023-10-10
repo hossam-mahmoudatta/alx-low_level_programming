@@ -20,7 +20,7 @@ char* string_nconcat(const char* s1, const char* s2, unsigned int n)
 
 	unsigned int Length = _strlen(s1) + n + 1;
 
-	memAllocate = (char *)malloc(sizeof(char) * Length);
+	memAllocate = malloc(sizeof(char) * Length);
 
 	if (memAllocate == NULL)
 		return (NULL);
