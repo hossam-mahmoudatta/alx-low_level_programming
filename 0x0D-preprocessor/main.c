@@ -1,17 +1,12 @@
-#ifndef MAIN_H
-#define MAIN_H
-
-#include <stdlib.h>
-#include <time.h>
 #include <stdio.h>
-#include <string.h>
 
-int _putchar(char c);
-char *create_array(unsigned int size, char c);
-char *_strdup(char *str);
-char *str_concat(char *s1, char *s2);
-int **alloc_grid(int width, int height);
-void free_grid(int **grid, int height);
-char *argstostr(int ac, char **av);
-
-#endif
+/**
+ * main - preints the name of the file
+ *
+ * Return: Always 0 (Success)
+ */
+int main(void)
+{
+	printf("%s\n", __FILE__);
+	return (0);
+}
