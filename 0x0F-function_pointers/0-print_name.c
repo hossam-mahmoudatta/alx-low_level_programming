@@ -2,7 +2,7 @@
 
 /**
  * print_name - prints the name of the file
- * 
+ *
  * @name: The tested variable.
  * @f: The tested variable.
  *
