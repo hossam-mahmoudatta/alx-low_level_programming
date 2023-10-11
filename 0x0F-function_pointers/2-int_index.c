@@ -2,11 +2,11 @@
 
 /**
  * int_index - searches for an integer
- * 
+ *
  * @array: array with data
  * @size: size of the array
  * @cmp: function pointer
- * 
+ *
  * Return: count of integer
  */
 
