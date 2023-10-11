@@ -6,10 +6,11 @@
  * @name The tested variable.
  * @f: The tested variable.
  *
- * Return: Always 0 (Success)
+ * Return: Vouid
  */
 void print_name(char *name, void (*f)(char *))
 {
 	if (f != NULL)
-		f(name);
+	
+	f(name);
 }
