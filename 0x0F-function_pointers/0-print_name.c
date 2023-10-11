@@ -11,7 +11,8 @@
 
 void print_name(const char *name, void (*f)(const char *))
 {
-	if (f != NULL)
-	
+	if (name == NULL || f == NULL)
+		return;
+
 	f(name);
 }
