@@ -2,7 +2,7 @@
 
 /**
  * array_iterator - preints the name of the file
- * 
+ *
  * @array: The tested variable.
  * @size: The tested variable.
  * @action: The tested variable.
