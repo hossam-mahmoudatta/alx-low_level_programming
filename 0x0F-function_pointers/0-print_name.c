@@ -8,7 +8,7 @@
  *
  * Return: Vouid
  */
-void print_name(char *name, void (*f)(char *))
+void print_name(const char *name, void (*f)(const char *))
 {
 	if (f != NULL)
 	
