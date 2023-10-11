@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * print_name - preints the name of the file
+ * print_name - prints the name of the file
  * 
- * @name The tested variable.
+ * @name: The tested variable.
  * @f: The tested variable.
  *
- * Return: Vouid
+ * Return: Void
  */
 
 void print_name(char *name, void (*f)(char *))
