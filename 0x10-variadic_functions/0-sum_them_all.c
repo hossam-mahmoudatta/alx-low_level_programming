@@ -4,6 +4,7 @@
  * sum_them_all - multiplies two positive numbers
  *
  * @n: Test var
+ * @...: Test var
  *
  * Return: int
  */
