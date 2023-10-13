@@ -2,6 +2,8 @@
     "files.associations": {
         "main.h": "c",
         "3-calc.h": "c",
-        "time.h": "c"
+        "time.h": "c",
+        "string.h": "c",
+        "stdlib.h": "c"
     }
 }
