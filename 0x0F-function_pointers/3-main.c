@@ -23,7 +23,7 @@ int main(int argc, char *argv[])
 
 	oprt = get_op_func(argv[2]);
 
-	if (oprt != 1)
+	if (!oprt)
 	{
 		printf("Error\n");
 		exit(99);
