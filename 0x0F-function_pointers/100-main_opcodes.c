@@ -9,9 +9,9 @@
  * Return: 0
  */
 
-int main(int argc, char **argv[])
+int main(int argc, char *argv[])
 {
-	char *p = (char *)main;
+	char *p;
 	int value, i;
 
 	if (argc != 2)
@@ -27,6 +27,8 @@ int main(int argc, char **argv[])
 		printf("Error\n");
 		exit(2);
 	}
+
+	p = (char *)main;
 
 	for (i = 0 ; i < value ; i++)
 	{
