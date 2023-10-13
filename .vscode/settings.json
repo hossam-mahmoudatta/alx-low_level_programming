@@ -1,6 +1,7 @@
 {
     "files.associations": {
         "main.h": "c",
-        "3-calc.h": "c"
+        "3-calc.h": "c",
+        "time.h": "c"
     }
 }
