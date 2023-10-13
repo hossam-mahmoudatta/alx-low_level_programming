@@ -1,4 +1,4 @@
-#include "variadic_functions.h"
+#include "main.h"
 
 /**
  * sum_them_all - multiplies two positive numbers
