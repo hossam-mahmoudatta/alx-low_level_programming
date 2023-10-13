@@ -7,7 +7,7 @@
  * @n: Test var
  * @...: Test var
  *
- * Return: int
+ * Return: void
  */
 
 void print_numbers(const char *separator, const unsigned int n, ...)
