@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * before_main - that adds a new node at the end of a list
+ * execB4Main - that adds a new node at the end of a list
  */
 
 void __attribute__ ((constructor)) execB4Main()
