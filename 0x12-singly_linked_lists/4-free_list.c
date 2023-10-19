@@ -1,12 +1,11 @@
 #include "lists.h"
 
 /**
- * add_node_end - that adds a new node at the end of a list
+ * free_list - that adds a new node at the end of a list
  *
  * @head: the struct that contains the data
- * @str: string to be copied into the linked list
  *
- * Return: a node
+ * Return: Nothing
  */
 
 void free_list(list_t *head)
