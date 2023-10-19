@@ -1,24 +1,25 @@
 #include "lists.h"
 
 /**
- * charFormater - formats character
+ * print_list - prints all elements of a linked lists
  *
- * @separator: Test var
- * @argPointer: Test var
+ * @h: the struct that contains the data
  *
- * Return: void
+ * Return: no. of nodes printed
  */
 
 size_t print_list(const list_t *h)
 {
 	size_t n = 0;
 
-	if (h->str == NULL)
-		printf("[0] (nil)\n");
-
-	else
+	while (h)
 	{
-		printf("[%u] %s\n ", h->len, h->str);
+		if (h->str == NULL)
+			printf("[0] (nil)\n");
+
+		else
+			printf("[%u] %s\n ", h->len, h->str);
+		
 		h = h->next;
 		n++;
 	}
