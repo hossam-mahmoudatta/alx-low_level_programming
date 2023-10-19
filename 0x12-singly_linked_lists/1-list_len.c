@@ -15,13 +15,5 @@ size_t list_len(const list_t *h)
 	if (!h)
 		return (0);
 
-	while (h)
-	{
-		printf("[%d]\n", h->next);
-
-		h = h->next;
-		n++;
-	}
-
-	return (n);
+	return (1 + list_len(h->next));
 }
