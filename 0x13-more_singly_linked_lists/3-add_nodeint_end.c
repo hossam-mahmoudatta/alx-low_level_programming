@@ -1,10 +1,10 @@
 #include "lists.h"
 
 /**
- * add_node_end - that adds a new node at the end of a list
+ * add_nodeint_end - that adds a new node at the end of a list
  *
  * @head: the struct that contains the data
- * @str: string to be copied into the linked list
+ * @n: string to be copied into the linked list
  *
  * Return: a node
  */
