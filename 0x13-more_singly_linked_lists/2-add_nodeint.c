@@ -1,12 +1,12 @@
 #include "lists.h"
 
 /**
- * add_node - that adds a new node at the beginning of a list
+ * add_nodeint - that adds a new node at the beginning of a list
  *
  * @head: the struct that contains the data
- * @str: string to be copied into the linked list
+ * @n: string to be copied into the linked list
  *
- * Return: a node
+ * Return: a listint_t
  */
 
 listint_t *add_nodeint(listint_t **head, const int n)
