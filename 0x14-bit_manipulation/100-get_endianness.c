@@ -12,5 +12,5 @@ int get_endianness(void)
 
 	char *sentence = (char *) &i;
 
-	return (*c);
+	return (*sentence);
 }
