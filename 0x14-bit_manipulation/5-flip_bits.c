@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * clear_bit - prints all elements of a linked list
+ * flip_bits - prints all elements of a linked list
  *
  * @n: the struct that contains the data
- * @index: the struct that contains the data
+ * @m: the struct that contains the data
  *
  * Return: no. of nodes printed
  */
