@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * get_bit - prints all elements of a linked list
+ * set_bit - prints all elements of a linked list
  *
  * @n: the struct that contains the data
  * @index: the struct that contains the data
