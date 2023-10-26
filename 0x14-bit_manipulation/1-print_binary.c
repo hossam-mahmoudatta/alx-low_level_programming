@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * binary_to_uint - prints all elements of a linked list
+ * print_binary - prints all elements of a linked list
  *
- * @b: the struct that contains the data
+ * @n: the struct that contains the data
  *
  * Return: no. of nodes printed
  */
