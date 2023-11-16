@@ -14,9 +14,9 @@
  */
 void check_elf(unsigned char *e_ident)
 {
-	int i;
+	int index;
 
-	for (i = 0; i < 4; i++)
+	for (index = 0; index < 4; index++)
 	{
 		if (e_ident[i] != 127 &&
 		    e_ident[i] != 'E' &&
@@ -38,20 +38,21 @@ void check_elf(unsigned char *e_ident)
  */
 void print_magic(unsigned char *e_ident)
 {
-	int x;
+	int index;
 
 	printf("  Magic:   ");
 
-	for (x = 0; x < EI_NIDENT; x++)
+	for (index = 0; index < EI_NIDENT; index++)
 	{
-		printf("%02x", e_ident[x]);
+		printf("%02x", e_ident[index]);
 
-		if (x == EI_NIDENT - 1)
+		if (index == EI_NIDENT - 1)
 			printf("\n");
 		else
 			printf(" ");
 	}
 }
+
 
 /**
  * print_class - Prints the class of an ELF header.
@@ -278,15 +279,15 @@ int main(int __attribute__((__unused__)) argc, char *argv[])
 	header = malloc(sizeof(Elf64_Ehdr));
 	if (header == NULL)
 	{
-		close_elf(fd);
+		close_elf(fileDescriptor);
 		dprintf(STDERR_FILENO, "Error: Can't read file %s\n", argv[1]);
 		exit(98);
 	}
-	s = read(fd, header, sizeof(Elf64_Ehdr));
+	s = read(fileDescriptor, header, sizeof(Elf64_Ehdr));
 	if (s == -1)
 	{
 		free(header);
-		close_elf(fd);
+		close_elf(fileDescriptor);
 		dprintf(STDERR_FILENO, "Error: `%s`: No such file\n", argv[1]);
 		exit(98);
 	}
