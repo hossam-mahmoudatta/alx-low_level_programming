@@ -1,5 +1,4 @@
 #include "main.h"
-/* more headers goes there */
 
 /* betty style doc for function main goes there */
 /**
@@ -7,7 +6,6 @@
  *
  * Return: 0 (otherwise)
  */
-
 int main(void)
 {
 	unsigned long int a = 1, b = 2, c, k, p, l, o, m, u, d, i;
