@@ -236,7 +236,6 @@ void print_type(unsigned int e_type, unsigned char *e_ident)
 }
 
 
-
 /**
  * close_elf - Closes an ELF file.
  * @elf: The file descriptor of the ELF file.
@@ -252,6 +251,7 @@ void close_elf(int elf)
 		exit(98);
 	}
 }
+
 
 /**
  * main - Displays the information contained in the
