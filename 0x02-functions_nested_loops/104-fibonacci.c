@@ -10,34 +10,33 @@
 
 int main(void)
 {
-	unsigned long first = 1;
-	unsigned long second = 2;
-	unsigned long fibo1_half1, fibo1_half2, fibo2_half1, fibo2_half2;
-	unsigned long next, i;
+	unsigned long int a = 1, b = 2, c, k, p, l, o, m, u, d, i;
+	c = a + b;
 
-	for (i = 0 ; i < 92 ; i++)
+	printf("%lu, %lu, ", a, b);
+	d = 3;
+	while (d < 89)
 	{
-		printf("%lu, ", first);
-		next = first + second;
-		first = second;
-		second = next;
+		printf("%lu, ", c);
+		a = b;
+		b = c;
+		c = a + b;
+		d++;
 	}
-
-	fibo1_half1 = first / 1000000000;
-	fibo2_half1 = second / 1000000000;
-	fibo1_half2 = first % 1000000000;
-	fibo2_half2 = second % 1000000000;
-
-	for (i = 93 ; i < 99 ; i++)
+	l = b / 1000000000;
+	o = b % 1000000000;
+	m = c / 1000000000;
+	u = c % 1000000000;
+	for (i = 89; i < 98; i++)
 	{
-		printf("%lu, ", fibo2_half1 + (fibo2_half2 / 1000000000));
-		printf("%lu", fibo2_half2 % 1000000000);
-
-		fibo2_half1 = fibo2_half1 + fibo1_half1;
-		fibo1_half1 = fibo2_half1 - fibo1_half1;
-		fibo2_half2 = fibo2_half2 + fibo1_half2;
-		fibo1_half2 = fibo2_half2 - fibo1_half2;
+		printf("%lu%lu, ", m, u);
+		k = l;
+		p = o;
+		l = m;
+		o = u;
+		m = k + l + ((p + o) / 1000000000);
+		u = (p + o) % 1000000000;
 	}
-	printf("\n");
+	printf("%lu%lu\n", m, u);
 	return (0);
 }
