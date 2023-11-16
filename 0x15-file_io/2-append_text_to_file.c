@@ -11,10 +11,25 @@
 
 int append_text_to_file(const char *filename, char *text_content)
 {
-	int bit;
+	int fileDescriptor, a, b = 0;
 
-	bit = (n >> index);
-	if (index > 32)
-	return (-1);
-	return (bit & 1);
+	if (!filename)
+		return (-1);
+
+	fileDescriptor = open(filename, O_WRONLY | O_APPEND);
+	if (fileDescriptor < 0)
+		return (-1);
+
+	if (text_content)
+	{
+		while (text_content[b])
+			b++;
+		a = write(fileDescriptor, text_content, b);
+		if (a != b)
+			return (-1);
+	}
+
+	close(fileDescriptor);
+
+	return (1);
 }
