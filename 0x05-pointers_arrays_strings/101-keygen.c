@@ -8,21 +8,18 @@
 
 int main (void)
 {
-	int i = 0;
-	int min = 1;
-	int max = 100;
-	int randomNumber;
+	int password, sum;
 
-
-	/**
-	 * This block checks the polarity of the number
-	 */
 	srand(time(NULL));
+	sum = 0;
 
-	for (i = 0 ; i < 5 ; i++)
+	while (sum <= 2645)
 	{
-		randomNumber = rand() % (max - min + 1) + min;
-		printf("Random Number %d: %d\n", i + 1, randomNumber);
+		password = (rand() % 128);
+		sum += password;
+		printf("%c", password);
 	}
+	printf("%c", 2772 - sum);
+
 	return (0);
 }
