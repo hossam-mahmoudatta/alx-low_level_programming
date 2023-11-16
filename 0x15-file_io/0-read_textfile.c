@@ -17,26 +17,36 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 	if (!filename)
 		return (0);
+
 	fileDescriptor = open(filename, O_RDONLY);
+
 	if (fileDescriptor < 0)
 		return (0);
-	buf = malloc(sizeof(char) * letters);
-	if (!buf)
+
+	buffer = malloc(sizeof(char) * letters);
+
+	if (!buffer)
 		return (0);
-	i = read(fileDescriptor, buf, letters);
+
+	i = read(fileDescriptor, buffer, letters);
+
 	if (i < 0)
 	{
-		free(buf);
+		free(buffer);
 		return (0);
 	}
-	buf[i] = '\0';
+
+	buffer[i] = '\0';
 	close(fileDescriptor);
-	y = write(STDOUT_FILENO, buf, i);
+
+	y = write(STDOUT_FILENO, buffer, i);
+
 	if (y < 0)
 	{
-		free(buf);
+		free(buffer);
 		return (0);
 	}
-	free(buf);
+
+	free(buffer);
 	return (y);
 }
