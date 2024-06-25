@@ -11,24 +11,22 @@
 char *rot13(char *s)
 {
 	int i = 0;
-	char text[] = "oOlLeEaAtT";
-	char nums[] = "0011334477";
+	char a[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	char b[] = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
 
-	while (s[i] != '\0')
+	int j = 0;
+	int k = 0;
+
+	for (i = 0; *(s + i); i++)
 	{
-		int j = 0;
-		int k = 0;
-
-		while (text[j] != '\0')
+		for (j = 0; j < 52; j++)
 		{
-			if (s[i] == text[j])
+			if (a[j] == *(s + i))
 			{
-				k = j;
-				s[i] = nums[k];
+				*(s + i) = b[j];
+				break;
 			}
-			j++;
 		}
-		i++;
 	}
 	return (s);
 }
