@@ -1,11 +1,5 @@
 #include "main.h"
 
-/**
- * main - power in 10 base
- * 
- * Return: returns 10 to power exponent
- */
-
 int main(void)
 {
   int n;
