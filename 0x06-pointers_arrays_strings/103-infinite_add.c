@@ -1,11 +1,14 @@
 #include "main.h"
 
 /**
- * rot13 - function to change lowercase to uppercase
+ * infinite_add - function to add two numbers
  *
- * @s: the tested variable
+ * @n1: first number
+ * @n2: second number
+ * @r: buffer for result
+ * @size_r: buffer size
  *
- * Return: charac
+ * Return: address of r or 0
  */
 
 char *infinite_add(char *n1, char *n2, char *r, int size_r)
